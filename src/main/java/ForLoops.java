@@ -37,18 +37,40 @@ public class ForLoops {
 //            System.out.println("Number is odd");
 //
 //        }
-        System.out.println("Print lines from");
-        int numberComparison = scan.nextInt();
-        for (int i = 1;i<=numberComparison;i++){
-            if ( i % 2 == 0){
-                System.out.println(i + ": even");
+//        System.out.println("Print lines from");
+//        int numberComparison = scan.nextInt();
+//        for (int i = 1;i<=numberComparison;i++){
+//            if ( i % 2 == 0){
+//                System.out.println(i + ": even");
+//            }
+//            else {
+//                System.out.println(i + ": " +
+//                        "odd");
+//
+//            }
+//        }
+//
+
+        System.out.println("---------------------");
+        System.out.println("Enter a number");
+        int randomValue = (int) ((Math.random()*10)+1);
+        int fizzBuzzingGame = randomValue;
+//                scan.nextInt();
+
+        for (int i=0; i <=fizzBuzzingGame; i++){
+            if (i%5==0 && i%3==0) {
+                System.out.println(i + "-" + "FizzBuzz");
             }
-            else {
-                System.out.println(i + ": " +
-                        "odd");
+            else if (i%3==0){
+                System.out.println(i+"-"+"Fizz");
+            }
+            else if (i%5==0){
+                System.out.println(i+"-"+"Buzz");
+            }
 
             }
         }
+
 
 
 //        System.out.println("I hear you like to count by threes");
@@ -79,4 +101,5 @@ public class ForLoops {
 
 
     }
-}
+
+
