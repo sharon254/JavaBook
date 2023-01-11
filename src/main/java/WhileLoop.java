@@ -1,7 +1,11 @@
+import Arrays.Arrays;
+
 import java.util.Scanner;
 
 public class WhileLoop {
     public static void main(String[]args){
+        String[] menu = {"Espresso", "Iced Coffee", "Mokito"};
+        Arrays.toString(menu);
         // keep running as long as a condition is true
 //        int numberT = 25;
 //        while(numberT <= 30){
