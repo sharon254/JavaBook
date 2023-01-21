@@ -4,6 +4,82 @@ import java.util.Scanner;
 
 public class Array {
     public static void main(String[]arg){
+        int[][] table = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        for (int i = 0; i < table.length; i++) {
+            System.out.print(table[i][0]);
+        }
+
+
+        double [][] prices = {
+                {12.99, 8.99, 9.99, 10.49, 11.99},
+                {0.99, 1.99, 2.49, 1.49, 2.99},
+                {8.99, 7.99, 9.49, 9.99, 10.99}
+        };
+        /**
+         * Looping through a row
+         *
+         */
+//        for (int i=0;i<prices[2].length;i++){
+//            System.out.println((prices[2][i]));
+//        }
+//        for (int j=0;j<prices[1].length;j++){
+//            System.out.println(prices[2][j]);
+//        }
+        /**
+         * Create a nested loop for it
+         */
+
+        for (int i =0;i<prices.length;i++){
+            switch (i){
+                case 0:System.out.print("\tFruits :");break;
+                case 1:System.out.print("\tVeges :");break;
+                case 2:System.out.print("\tSmoothies :");break;
+            }
+            for (int j=0;j<prices[0].length;j++){
+                System.out.print(prices[0][j]);
+
+            }
+            System.out.println("\n");
+        }
+
+
+
+
+//        /**
+
+
+//        int a =456,b,c,d=10;b=a/d;c=a-b;
+//        System.out.println(c);
+        int p = 9;
+        int w = 6 ;
+        p = p + 1 ;
+        w = w - 1 ;
+        p = p + w ;if (p > w)
+            System.out.println(w);
+
+        /**
+         * 7. What is the output of the following pseudo code?       int a =456,b,c,d=10;b=a/d;c=a-b;print c;
+         * 411, 4
+         * 411
+         * 410
+         * 410, 4
+         * 10. A loop that never ends is referred to as a(n)_________.
+         * While Loop
+         * For Loop
+         * Recursive Loop
+         * Infinite Loop
+         * 15. A graphical representation of an algorithm to solve a problem is called …………
+         * Flow of data
+         * Barchart
+         * Histogram
+         * Flowchart
+
+         */
 //        double cellicous[] = {10.0,20.3,33.5,30.6};
 //        double fareighheight[]= Arrays.copyOf(cellicous,cellicous.length);
 //        System.out.println(Arrays.toString(fareighheight));
@@ -70,23 +146,41 @@ public class Array {
 //        for (int i=0;i<Fahrenheit.length;i++){
 //            Fahrenheit[i] = Fahrenheit[i]*1.8;
 //
+////
+////        }
+////        System.out.println(Arrays.toString(Fahrenheit));
 //
-//        }
-//        System.out.println(Arrays.toString(Fahrenheit));
+//        /**
+//         * 2D Arrays
+//         * 1.Type of data
+//         * 2. 2 brackets
+//         * 3.No. of rows
+//         * 4.Elements in each row(columns)
+//         */
+//        int [][] grades =
+//        {
+//            {
+//                72,74,78,76},
+//                {
+//                        82,84,88,86},
+//                {
+//                        92,94,98,96},
+//                {
+//                        62,64,68,66},
+//
+//        };
+//        System.out.println("\tHarry :" + Arrays.toString(grades[0]));
+//        System.out.println("\tMary" + Arrays.toString(grades[1]));
+//        System.out.println("\tTony" + Arrays.toString(grades[2]));
+//
 
-        /**
-         * 2D Arrays
-         * 1.Type of data
-         * 2. 2 brackets
-         * 3.No. of rows
-         * 4.Elements in each row(columns)
-         */
-        int [][] grades = new int [3][4];
-        grades[0][0]= 72;
-        grades[0][1]= 74;
-        grades[0][2]= 78;
-        grades[0][3]= 76;
-        System.out.println("\tHarry :" + Arrays.toString(grades[0]));
+//        int a =40;
+//        int b =35;
+//        int c=20;
+//        int d =10;
+//        System.out.println(a*b/(c-d)
+//        );
+
 
 
 
