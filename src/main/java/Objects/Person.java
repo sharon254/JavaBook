@@ -10,6 +10,13 @@ public class Person {
     public Person(String name, String nationality, String dateOfBirth, String[] passport,int seatNumber){
 
     }
+    public Person(Person source){
+        this.name = source.name;
+        this.seatNumber = source.seatNumber;
+        this.dateOfBirth = source.dateOfBirth;
+        this.nationality = source.nationality;
+        this.passport = source.passport;
+    }
 
     public String getName() {
         return name;

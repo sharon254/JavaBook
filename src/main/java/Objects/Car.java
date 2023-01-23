@@ -1,11 +1,13 @@
 package Objects;
 
+import java.util.Arrays;
+
 public class Car {
     private String make;
     private double price;
     private int year;
     private String color;
-    private String parts;
+    private String[] parts;
     /*
      use getters to access the fields in objects
     from the car class you will create objects
@@ -50,20 +52,30 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
+    public String[] getParts() {
+        return parts;
+    }
 
-    public Car(String make, String color, int year, double price){
-        this.price = price;
+    public void setParts(String make) {
+        this.parts = parts;
+    }
+
+    public Car(String make, double price, int year, String color, String[] parts) {
         this.make = make;
+        this.price = price;
         this.year = year;
         this.color = color;
-
-
+        this.parts = parts;
     }
+
     public Car(Car source){
         this.make =source.make;
         this.price = source.price;
         this.year = source.year;
         this.color= source.color;
+        //this.parts = source.parts;
+        // to avoid reference trap we copy
+        this.parts = Arrays.copyOf(parts,parts.length);
 
 
     }

@@ -10,7 +10,9 @@ public class Main {
          * 2.perform tasks
          * 3.A class is a blue print from which you create an object
          */
-        Car toyota = new Car("Toyota","Blue",2019, 1234.56);
+        // AArrays in Java are mutable objects
+        String [] spareparts= new String[]{"Keys", "Tyres"};
+        Car toyota = new Car("Toyota",1234567,2019, "blue", spareparts);
         Car toyota2 = new Car(toyota);
 
         // we ain't creating a new object, we are just referring to the same object
@@ -44,6 +46,9 @@ public class Main {
         System.out.println("This" + toyota.getMake() + "is worth" + toyota.getPrice());
         Person sharon = new Person("Sharon", "Kenyan", "14-05-1999", new String[]{"dd,ddd,"}, 9);
         sharon.setSeatNumber(8);
+        Person sharon2 = new Person(sharon);
+        sharon2.setName("Jane");
+        sharon2.setSeatNumber(11);
 //        sharon.name = "Sharon";
 //        sharon.dateOfBirth = "14-05-1999";
 //        sharon.nationality = "Kenyan";
