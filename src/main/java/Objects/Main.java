@@ -11,8 +11,22 @@ public class Main {
          * 3.A class is a blue print from which you create an object
          */
         Car toyota = new Car("Toyota","Blue",2019, 1234.56);
+        Car toyota2 = new Car(toyota);
+
+        // we ain't creating a new object, we are just referring to the same object
+        // one objct is updated with two vaiables
+        /**
+         * Copy constructor
+         * Create a constructor that defines one parameter
+         *
+         */
+
+
+        
         toyota.setColor("Grey");
         toyota.setPrice(toyota.getPrice()/2);
+        toyota.drive();
+
         // with the constructor this is done in a singe
         // Constructor with 4 parameters
         // the constructor must update the objects fields
@@ -29,17 +43,20 @@ public class Main {
 
         System.out.println("This" + toyota.getMake() + "is worth" + toyota.getPrice());
         Person sharon = new Person("Sharon", "Kenyan", "14-05-1999", new String[]{"dd,ddd,"}, 9);
-        sharon.name = "Sharon";
-        sharon.dateOfBirth = "14-05-1999";
-        sharon.nationality = "Kenyan";
-        sharon.passport = new String[]{sharon.name, sharon.nationality, sharon.dateOfBirth};
-        sharon.seatNumber = 4;
-        System.out.println(sharon.name);
-        System.out.println(sharon.nationality);
-        System.out.println(sharon.dateOfBirth);
-        System.out.println(Arrays.toString(sharon.passport));
+        sharon.setSeatNumber(8);
+//        sharon.name = "Sharon";
+//        sharon.dateOfBirth = "14-05-1999";
+//        sharon.nationality = "Kenyan";
+//        sharon.passport = new String[]{sharon.name, sharon.nationality, sharon.dateOfBirth};
+//        sharon.seatNumber = 4;
+        System.out.println(sharon.getName());
+        System.out.println(sharon.getNationality());
+        System.out.println(sharon.getNationality());
+        System.out.println(Arrays.toString(sharon.getPassport()));
         //System.out.println(Arrays.toString(sharon.passport));
-        System.out.println(sharon.seatNumber);
+        System.out.println(sharon.getSeatNumber());
+        System.out.println(sharon.applyPassport());
+
         /**
          * You can only use shorthand initialization in the same line as the variable declaration.
          * That's because the compiler is able to infer the array type.
