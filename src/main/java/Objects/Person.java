@@ -1,5 +1,7 @@
 package Objects;
 
+import java.util.Arrays;
+
 public class Person {
     private String name;
     private String nationality;
@@ -15,7 +17,8 @@ public class Person {
         this.seatNumber = source.seatNumber;
         this.dateOfBirth = source.dateOfBirth;
         this.nationality = source.nationality;
-        this.passport = source.passport;
+        //this.passport = source.passport;
+        this.passport = Arrays.copyOf(passport,passport.length);
     }
 
     public String getName() {
