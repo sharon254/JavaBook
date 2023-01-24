@@ -53,11 +53,11 @@ public class Car {
         this.color = color;
     }
     public String[] getParts() {
-        return parts;
+        return Arrays.copyOf(parts,parts.length);
     }
 
-    public void setParts(String make) {
-        this.parts = parts;
+    public void setParts(String[]parts) {
+        this.parts=Arrays.copyOf(parts,parts.length);
     }
 
     public Car(String make, double price, int year, String color, String[] parts) {
@@ -66,6 +66,7 @@ public class Car {
         this.year = year;
         this.color = color;
         this.parts = parts;
+        this.parts = Arrays.copyOf(parts,parts.length);
     }
 
     public Car(Car source){
