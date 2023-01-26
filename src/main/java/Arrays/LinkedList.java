@@ -8,7 +8,8 @@ public class LinkedList {
          * The current node stores the link to the previous node
          * Retrieving data from a linked list is very slow
          * there are no indexes , they are a chain of nodes, eachnode is linked to the previous and next list
-         * 
+         * ArrayList is better in retrieving data
+         * while LinkedList is better in removing elements from the middle
          *
          */
 
