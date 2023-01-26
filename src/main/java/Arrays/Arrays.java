@@ -86,3 +86,6 @@ public class Arrays {
     public static void toString(String[] menu) {
     }
 }
+/**
+ * Array List and Linked list doe not have limited number of elements init
+ */
