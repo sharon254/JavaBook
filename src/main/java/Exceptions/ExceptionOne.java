@@ -10,10 +10,12 @@ public class ExceptionOne {
             FileInputStream fis = new FileInputStream("/Users/net/Downloads/Section4/src/main/java/Exceptions/greetings.txt");
             Scanner scanner = new Scanner(fis);
             System.out.println(scanner.nextLine());
-
             scanner.close();
         } catch(FileNotFoundException exception) {
             System.out.println(exception.getMessage());
+        }
+        finally {
+            System.out.println("Process complete");
         }
     }
     // /Users/net/Downloads/Section4/src/main/java/Exceptions/greetings.txt

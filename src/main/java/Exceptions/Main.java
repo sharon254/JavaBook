@@ -12,6 +12,13 @@ public class Main {
      * Run tine exception
      * Un-captured exception
      * Finally block runs no matter what
+     *RunTime Exceptions
+     * Are not checked by the compiler
+     * Examples:
+     * 1.ArrayIndexOutOfBoundException
+     * 2.NullPointerException
+     * 3.InputMismatchException
+     * IllegalArgumentException
      *
      *
      *
